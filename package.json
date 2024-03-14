@@ -1,0 +1,37 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "A project to create an online bookstore",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "test",
+    "lint": "stylelint \"src/**/*.css\" && eslint --fix src",
+    "build:watch": "webpack --watch",
+    "compile-css": "xcopy /Y /I src\\style.css output\\",
+    "watch-css": "onchange \"src/style.css\" -- npm run compile-css"
+  },
+  "keywords": [
+    "keyword1",
+    "keyword2"
+  ],
+  "author": "Alexandra",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "eslint": "^8.57.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "npm-watch": "^0.11.0",
+    "onchange": "^7.1.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^1.0.2",
+    "style-loader": "^3.3.4",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-webpack-plugin": "^5.0.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}

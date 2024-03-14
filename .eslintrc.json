@@ -1,0 +1,19 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "padding-line-between-statements": [
+            "error",
+            "always",
+            { "blankLine": "always", "prev": "*", "next": "block-like" }
+          ],
+        "indent": ["error", "tab"]
+    }
+}

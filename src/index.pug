@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='style.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap' rel='stylesheet')
+    title Bookshop
+  body.body-bookshop
+    main
+      .slider-conteiner
+        .slider
+          .slider-images
+          .slider-dots
+        .slider-bloks
+          .slider-blok1
+            a(href='#')
+              p CHANGE OLD BOOK ON NEW
+              img(src='images/svg/arrow.svg')
+          .slider-blok2
+            a(href='#')
+              p TOP 100 BOOKS 2024
+              img(src='images/svg/arrow.svg')
+      .content
+        .content-aside
+          aside
+            ul.aside-links
+              li.aside-link(data-category='Architecture')
+                a(href='#') Architecture
+              li.aside-link(data-category='Art & Fashion')
+                a(href='#') Art & Fashion
+              li.aside-link(data-category='Biography')
+                a(href='#') Biography
+              li.aside-link(data-category='Business')
+                a(href='#') Business
+              li.aside-link(data-category='Crafts & Hobbies')
+                a(href='#') Crafts & Hobbies
+              li.aside-link(data-category='Drama')
+                a(href='#') Drama
+              li.aside-link(data-category='Fiction')
+                a(href='#') Fiction
+              li.aside-link(data-category='Food & Drink')
+                a(href='#') Food & Drink
+              li.aside-link(data-category='Health & Wellbeing')
+                a(href='#') Health & Wellbeing
+              li.aside-link(data-category='History & Politics')
+                a(href='#') History & Politics
+              li.aside-link(data-category='Humor')
+                a(href='#') Humor
+              li.aside-link(data-category='Poetry')
+                a(href='#') Poetry
+              li.aside-link(data-category='Psychology')
+                a(href='#') Psychology
+              li.aside-link(data-category='Science')
+                a(href='#') Science
+              li.aside-link(data-category='Technology')
+                a(href='#') Technology
+              li.aside-link(data-category='Travel & Maps')
+                a(href='#') Travel & Maps
+        .content-book-cards
+    script(type='module' src='../output/main.js')
